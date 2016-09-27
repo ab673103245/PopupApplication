@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="48dp">
+
+
+    <ImageView
+        android:id="@+id/iv"
+        android:padding="12dp"
+        android:src="@drawable/user"
+        android:layout_width="48dp"
+        android:layout_height="48dp" />
+
+    <TextView
+        android:layout_toRightOf="@id/iv"
+        android:id="@+id/tv_username"
+        android:text="username"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp" />
+
+    <!--  这个ImageView的父容器是要被new出来的，即pwView-->
+    <ImageView
+        android:padding="12dp"
+        android:src="@drawable/delete"
+        android:layout_alignParentRight="true"
+        android:id="@+id/iv_delete"
+        android:layout_width="48dp"
+        android:layout_height="48dp" />
+
+</RelativeLayout>
